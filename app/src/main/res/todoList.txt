@@ -1,0 +1,18 @@
+// Todo : App contains at least 4 lists of relevant attractions for a location.
+
+// Todo : User can navigate between lists using a central screen, a NavDrawer, or a View pager.
+
+// Todo : Each list item contains information about an event, restaurant, historical site, or similar.
+
+// Todo : At least one list includes pictures of the location.
+
+// Todo : Text sizes are defined in sp. Lengths are defined in dp.
+// Todo :Padding and margin is used appropriately, such that the views are not crammed up against each other.
+
+// Todo : App contains a custom object for storing location information .
+
+// Todo : App uses a custom adapter to populate the layout with views based on instances of the custom class.
+
+// Todo : All strings are stored in the strings.xml resource file.
+
+// Todo : All images are stored as drawables and stored at multiple densities.
