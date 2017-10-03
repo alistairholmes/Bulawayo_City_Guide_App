@@ -1,5 +1,9 @@
 package com.example.android.bulawayo_city_guide_app;
 
+import android.util.Log;
+
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
+
 /**
  *  {@link Info} Is a custom object that contains information about attractions in a city.
  *  Information includes a Title, a Description translation, an Image for that attraction,
@@ -31,15 +35,15 @@ public class Info {
      *
      * @param title is the name of the attraction.
      * @param description is the description of the attraction
-     * @param imageResourceID id of the image resource
+     *
      * @param address location of attraction
      * @param operatingHours operating hours of attraction
      * @param starRating rating of attraction
      */
-    public Info (String title, String description, int imageResourceID, String address, String operatingHours, double starRating) {
+    public Info (String title, String description, String address, String operatingHours, double starRating) {
         mTitle = title;
         mDescription = description;
-        mImageResourceID = imageResourceID;
+       /* mImageResourceID = imageResourceID;*/
         mAddress = address;
         mOperatingHours = operatingHours;
         mStarRating = starRating;
@@ -73,5 +77,17 @@ public class Info {
     // Get star rating
     public double getStarRating() {
         return mStarRating;
+    }
+
+    //Creates String using Info ArrayList.
+    @Override
+    public String toString() {
+        String displayInfo = "Title: " + getTitle() + "\n" +
+                             "Description: " + getDescription() + "\n" +
+                             "Address: " + getAddress() + "\n" +
+                             "Hours: " + getOperatingHours() + "\n" +
+                             "Star Rating: " + getStarRating() + "\n";
+        return displayInfo;
+
     }
 }
