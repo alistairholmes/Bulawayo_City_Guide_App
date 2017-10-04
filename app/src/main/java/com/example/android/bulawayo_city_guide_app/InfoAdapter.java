@@ -28,13 +28,14 @@ public class InfoAdapter extends ArrayAdapter<Info> {
         super(context, 0, information);
     }
 
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        return super.getView(position, convertView, parent);
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Check if an existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(
+                    R.layout.list_item, parent, false);
         }
 
         // Get the {@link Info} object located at this position in the list
@@ -46,5 +47,27 @@ public class InfoAdapter extends ArrayAdapter<Info> {
         // the Title TextView.
         titleTextView.setText(currentInfo.getTitle());
 
+        // Find the TextView in the list_item.xml layout with the ID description_text_view.
+        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
+        // Get the Description from the currentInfo object and set this text on
+        // the Description TextView.
+        descriptionTextView.setText(currentInfo.getDescription());
+
+        // Find the TextView in the list_item.xml layout with the ID operating_hours_text_view.
+        TextView operatingHoursTextView = (TextView) listItemView.findViewById(R.id.operating_hours_text_view);
+        // Get the OperatingHours from the currentInfo object and set this text on
+        // the OperatingHours TextView.
+        operatingHoursTextView.setText(currentInfo.getOperatingHours());
+
+        // Find the TextView in the list_item.xml layout with the ID address_text_view.
+        TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_text_view);
+        // Get the Title from the currentInfo object and set this text on
+        // the Title TextView.
+        addressTextView.setText(currentInfo.getAddress());
+
+        // Return the whole list item layout (containing 4 TextViews) so that it can be shown in
+        // the ListView.
+        return listItemView;
     }
+
 }

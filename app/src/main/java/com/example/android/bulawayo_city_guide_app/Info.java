@@ -40,13 +40,13 @@ public class Info {
      * @param operatingHours operating hours of attraction
      * @param starRating rating of attraction
      */
-    public Info (String title, String description, String address, String operatingHours, double starRating) {
+    public Info (String title, String description, String address, String operatingHours) {
         mTitle = title;
         mDescription = description;
        /* mImageResourceID = imageResourceID;*/
         mAddress = address;
         mOperatingHours = operatingHours;
-        mStarRating = starRating;
+        /*mStarRating = starRating;*/
     }
 
     // Get the title of attraction.
