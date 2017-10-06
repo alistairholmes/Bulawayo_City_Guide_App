@@ -79,15 +79,4 @@ public class Info {
         return mStarRating;
     }
 
-    //Creates String using Info ArrayList.
-    @Override
-    public String toString() {
-        String displayInfo = "Title: " + getTitle() + "\n" +
-                             "Description: " + getDescription() + "\n" +
-                             "Address: " + getAddress() + "\n" +
-                             "Hours: " + getOperatingHours() + "\n" +
-                             "Star Rating: " + getStarRating() + "\n";
-        return displayInfo;
-
-    }
 }
