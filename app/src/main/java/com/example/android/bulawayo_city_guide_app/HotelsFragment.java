@@ -32,14 +32,22 @@ public class HotelsFragment extends Fragment {
         ArrayList<Info> information = new ArrayList<>();
 
         // Populate the adapter
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
-        information.add(new Info("26 On Park", "Nice place to eat", "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
+        information.add(new Info("26 On Park", "5", R.drawable.parkroad,"Nice place to eat. This place serves the best food in Bulawayo.",
+                "26 Park Rd, Suburbs", "8am - 5pm"));
 
         // Create an {@link InfoAdapter}, whose data source is a list of {@link information} (above). The
         // adapter knows how to create list items for each item in the list.

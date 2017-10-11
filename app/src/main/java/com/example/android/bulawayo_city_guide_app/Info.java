@@ -2,6 +2,7 @@ package com.example.android.bulawayo_city_guide_app;
 
 import android.util.Log;
 
+import static android.R.attr.description;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 
 /**
@@ -28,30 +29,35 @@ public class Info {
     private String mOperatingHours;
 
     // Star Rating of attraction
-    private double mStarRating;
+    private String mStarRating;
 
     /**
      * Create a new Info object.
      *
      * @param title is the name of the attraction.
      * @param description is the description of the attraction
-     *
+     * @param image is image of attraction
      * @param address location of attraction
      * @param operatingHours operating hours of attraction
      * @param starRating rating of attraction
      */
-    public Info (String title, String description, String address, String operatingHours) {
+    public Info (String title, String starRating, int image, String description, String address, String operatingHours) {
         mTitle = title;
         mDescription = description;
-       /* mImageResourceID = imageResourceID;*/
+        mImageResourceID = image;
         mAddress = address;
         mOperatingHours = operatingHours;
-        /*mStarRating = starRating;*/
+        mStarRating = starRating;
     }
 
     // Get the title of attraction.
     public String getTitle() {
         return mTitle;
+    }
+
+    // Get star rating
+    public String getStarRating() {
+        return mStarRating;
     }
 
     // Get description of attraction
@@ -74,9 +80,6 @@ public class Info {
         return mOperatingHours;
     }
 
-    // Get star rating
-    public double getStarRating() {
-        return mStarRating;
-    }
+
 
 }
